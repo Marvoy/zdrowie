@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Marvoy/zdrowie/uroda/sport",
-    "currentPage": "index.html",
+    "currentPage": "page15.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -27,12 +27,14 @@
         "isAnimatedOnScroll": false,
         "isScrollToTopButton": false
       },
-      "additionalSetColors": []
+      "additionalSetColors": [
+        "#1634ed"
+      ]
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.9.3",
     "siteFonts": [],
-    "uniqCompNum": 6,
+    "uniqCompNum": 15,
     "versionPublish": "4.9.3",
     "screenshot": "screenshot.png",
     "favicon": "",
@@ -8611,60 +8613,121 @@
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
-            ".card-box": {
-              "padding": "0 2rem"
-            },
-            ".mbr-section-btn": {
-              "padding-top": "1rem",
-              "a": {
-                "margin-top": "1rem",
-                "margin-bottom": "0"
-              }
-            },
             "h4": {
               "font-weight": "500",
               "margin-bottom": "0",
-              "text-align": "left",
-              "padding-top": "2rem"
+              "text-align": "left"
             },
             "p": {
-              "margin-bottom": "0",
-              "text-align": "left",
-              "padding-top": "1.5rem",
-              "& when not (@showTitle)": {
-                "padding-top": "2rem"
-              }
+              "color": "#767676",
+              "text-align": "left"
             },
-            ".mbr-text": {
-              "color": "#767676"
+            ".card-box": {
+              "padding-top": "2rem"
             },
             ".card-wrapper": {
-              "height": "100%",
-              "padding-bottom": "2rem",
-              "background": "@cardsBg",
-              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
-              "transition": "box-shadow 0.3s",
-              "& when not (@showTitle)": {
-                "& when not (@showText)": {
-                  "& when not (@showButtons)": {
-                    "padding-bottom": "0"
-                  }
-                }
-              },
-              "&:hover": {
-                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
-                "transition": "box-shadow 0.3s"
-              }
+              "height": "100%"
+            },
+            "P": {
+              "color": "#1634ed"
+            },
+            ".card-title": {
+              "color": "#cc2952",
+              "text-align": "center"
             }
           },
-          "_name": "features3",
-          "_customHTML": "<section class=\"features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline=\"\" title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Pokaż tytuł\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Pokaż tekst\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Pokaż przyciski\" name=\"showButtons\" checked=\"\">\n        <input type=\"color\" title=\"Tło wizytówek\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Wizytówki\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected=\"\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Obrazek\" value=\"../_images/background5.jpg\" parallax=\"\">\n            <input type=\"color\" title=\"Kolor ta\" value=\"#efefef\" selected=\"\">\n            <input type=\"video\" title=\"Film\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Nakładka\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Kolor nakładki\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Przejrzystość\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/background1.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Bez znajomości kodu HTML\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            \"Mobirise\" to łatwy w użyciu program do tworzenia stron internetowych - po prostu przeciągnij i upuść elementy witryny na swoją stronę, dodaj multimedia i nadaj własny styl, aby wyglądała zgodnie z Twoimi wyobrażeniami.\n                        </p>\n                    </div>\n                    <div mbr-buttons=\"\" mbr-theme-style=\"display-4\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                        <a href=\"https://mobirise.co\" class=\"btn btn-primary\">\n                            Dowiedz się więcej\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/background2.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Przyjazne urządzeniom mobilnym\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Wszystkie witryny internetowe, które tworzysz za pomocą \"Mobirise\", są przyjazne urządzeniom mobilnym. Nie musisz tworzyć specjalnej wersji witryny.\n                        </p>\n                    </div>\n                    <div mbr-buttons=\"\" mbr-theme-style=\"display-4\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                        <a href=\"https://mobirise.co\" class=\"btn btn-primary\">\n                            Dowiedz się więcej\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/background3.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unikalne style\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            \"Mobirise\" oferuje wiele różnorodnych, gotowych elementów, tak zwanych segmentów, które możesz dostosować do swoich potrzeb.\n                        </p>\n                    </div>\n                    <div mbr-buttons=\"\" mbr-theme-style=\"display-4\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                        <a href=\"https://mobirise.co\" class=\"btn btn-primary\">\n                            Dowiedz się więcej\n                        </a>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-lg-3\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/background4.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Nieograniczona ilość stron internetowych\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                           \"Mobirise\" daje Ci możliwość możliwość utworzenia tylu stron internetowych, ilu potrzebujesz.\n                        </p>\n                    </div>\n                    <div mbr-buttons=\"\" mbr-theme-style=\"display-4\" class=\"mbr-section-btn text-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                        <a href=\"https://mobirise.co\" class=\"btn btn-primary\">\n                            Dowiedz się więcej\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "rifetRSMCi",
+          "_name": "features2",
+          "_customHTML": "<section class=\"features2\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"9\">\n        <input type=\"range\" inline title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Pokaż tytuł\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Pokaż tekst\" name=\"showText\" checked>\n        <select title=\"Wizytówki\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Obrazek\" value=\"../_images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Kolor ta\" value=\"#e4d295\" selected>\n            <input type=\"video\" title=\"Film\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Nakładka\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Kolor nakładki\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Przejrzystość\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"http://e-m2m.pl/5c69497560cfd\"><img src=\"@PROJECT_PATH@/assets/images/006f52e9102a8d3be2fe-840-300-300-300x228.jpg\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"http://e-m2m.pl/5c69497560cfd\">TU</a><br><a href=\"http://e-m2m.pl/5c69497560cfd\">Przejdziesz do wniosku</a></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"http://e-m2m.pl/5c69497560cfd\">Lendon oferuje teraz 3000 zł na pierwszą pożyczkę nawet do 45 dni. Szybka decyzja. Pieniądze nawet w 15 minut. RRSO 1958%. Pierwsza pożyczka bezpłatna.</a></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"http://e-m2m.pl/5c693bb2b6e93\"><img src=\"@PROJECT_PATH@/assets/images/112-1.gif\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box \">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b><a href=\"http://e-m2m.pl/5c693bb2b6e93\" class=\"text-secondary\">TU</a><br><a href=\"http://e-m2m.pl/5c693bb2b6e93\" class=\"text-secondary\">Przejdziesz do wniosku</a></b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"http://e-m2m.pl/5c693bb2b6e93\">Provident. Możliwa kwota pożyczki: do 10000 zł. Okresy pożyczki: od 200 do 630 dni. RRSO od 64,3%. Pierwsza pożyczka: bezpłatna.</a><br><a href=\"http://e-m2m.pl/5c693bb2b6e93\">Przejdź do wnisku</a></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"http://e-m2m.pl/5c69485c23d3b\"><img src=\"@PROJECT_PATH@/assets/images/157-1.gif\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"http://e-m2m.pl/5c69485c23d3b\">Tu</a><br><a href=\"http://e-m2m.pl/5c69485c23d3b\">Przejdziesz do wniosku</a></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"http://e-m2m.pl/5c69485c23d3b\">NetCredit. Kolejna pożyczka do 5000 zł. Szybka decyzja i minimum formalności. RRSO dla przykładu reprezentatywnego wynosi 674,24%. Pierwsza pożyczka bezpłatna.</a></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/background4.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Nieograniczona ilość stron internetowych\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            \"Mobirise\" daje Ci możliwość możliwość utworzenia tylu stron internetowych, ilu potrzebujesz. <a href=\"https://mobirise.co\">Dowiedz się więcej...</a>\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "riktusyv5W",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "features3-5"
+          "_anchor": "features2-9"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-box": {
+              "padding-top": "2rem"
+            },
+            ".card-wrapper": {
+              "height": "100%"
+            },
+            "P": {
+              "color": "#1634ed"
+            },
+            ".card-title": {
+              "color": "#cc2952",
+              "text-align": "center"
+            }
+          },
+          "_name": "features2",
+          "_customHTML": "<section class=\"features2\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Pokaż tytuł\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Pokaż tekst\" name=\"showText\" checked>\n        <select title=\"Wizytówki\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Obrazek\" value=\"../_images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Kolor ta\" value=\"#e4d295\" selected>\n            <input type=\"video\" title=\"Film\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Nakładka\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Kolor nakładki\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Przejrzystość\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"http://e-m2m.pl/5c694a20a2826\"><img src=\"@PROJECT_PATH@/assets/images/183-1.gif\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"http://e-m2m.pl/5c694a20a2826\" class=\"text-secondary\">\n                            TU</a><br><a href=\"http://e-m2m.pl/5c694a20a2826\" class=\"text-secondary\"> Przejsziesz do wnioski</a></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"http://e-m2m.pl/5c694a20a2826\">Ekspres Kasa. Dla stałych Klientów do 4 000 zł. Decyzja w ekspresowym tempie. Gotówka na Twoim koncie bez wychodzenia z domu. RRSO dla przykładu reprezentatywnego wynosi 1974%. Pierwsza pożyczka bezpłatna.</a></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"http://e-m2m.pl/5c694c14879a7\"><img src=\"@PROJECT_PATH@/assets/images/184.gif\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box \">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b><a href=\"http://e-m2m.pl/5c694c14879a7\" class=\"text-secondary\">TU</a><br><a href=\"http://e-m2m.pl/5c694c14879a7\" class=\"text-secondary\"> przejdziesz do wniosku</a></b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"http://e-m2m.pl/5c694c14879a7\">Vivus. Pierwsza pożyczka – pożyczysz od 100 do 3000 zł. Pieniądze na koncie ekspresowo po wydaniu przez pożyczkodawcę pozytywnej decyzji kredytowej (RRSO 819,10%). Dla stałych klientów – pożyczka nawet do 7500 zł (RRSO 819,10%). Pierwsza pożyczka bezpłatna</a></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"http://e-m2m.pl/5c694aa5363d6\"><img src=\"@PROJECT_PATH@/assets/images/230.gif\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"http://e-m2m.pl/5c694aa5363d6\" class=\"text-secondary\">TU</a><br><a href=\"http://e-m2m.pl/5c694aa5363d6\" class=\"text-secondary\"> Przejdziesz do wniosku</a></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"http://e-m2m.pl/5c694aa5363d6\">Pierwsza pożyczka krótkoterminowa do 1500 zł nawet na 60 dni!\n</a><br><a href=\"http://e-m2m.pl/5c694aa5363d6\">Pożyczka ratalna dla nowych Klientów do 20000 zł nawet w 60 ratach, a do 30 dni oddajesz tyle, ile pożyczyłeś!</a></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/background4.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Nieograniczona ilość stron internetowych\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            \"Mobirise\" daje Ci możliwość możliwość utworzenia tylu stron internetowych, ilu potrzebujesz. <a href=\"https://mobirise.co\">Dowiedz się więcej...</a>\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rikIcWp1zl",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features2-c"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-box": {
+              "padding-top": "2rem"
+            },
+            ".card-wrapper": {
+              "height": "100%"
+            },
+            "P": {
+              "color": "#1634ed"
+            },
+            ".card-title": {
+              "color": "#ff3366",
+              "text-align": "center"
+            }
+          },
+          "_name": "features2",
+          "_customHTML": "<section class=\"features2\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Pokaż tytuł\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Pokaż tekst\" name=\"showText\" checked>\n        <select title=\"Wizytówki\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Obrazek\" value=\"../_images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Kolor ta\" value=\"#e4d295\" selected>\n            <input type=\"video\" title=\"Film\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Nakładka\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Kolor nakładki\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Przejrzystość\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"http://e-m2m.pl/5c6950a5ae1c4\"><img src=\"@PROJECT_PATH@/assets/images/387.gif\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">TU <br>Przejdziesz do wniosku</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Chwilówkomat to szansa dla Ciebie na otrzymanie szybkiej pożyczki do 5000 zł.\n<br>Nie wymagamy żadnych dokumentów, jedyne co jest Ci potrzebne to komputer, tablet lub telefon komórkowy z dostępem do internetu oraz konto bankowe, którego jesteś właścicielem.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"http://e-m2m.pl/5c69525950a95\"><img src=\"@PROJECT_PATH@/assets/images/353.gif\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box \">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"http://e-m2m.pl/5c69525950a95\" class=\"text-secondary\">TU </a><br><a href=\"http://e-m2m.pl/5c69525950a95\" class=\"text-secondary\">przejdziesz do wniosku</a></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><a href=\"http://e-m2m.pl/5c69525950a95\">Odnawialna Linia Pożyczkowa banknot.pl daje Ci swobodę decydowania o tym w jaki sposób i kiedy będziesz dysponować przyznanymi środkami. U nas to Ty decydujesz ile i kiedy wypłacasz oraz spłacasz.</a></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <a href=\"http://e-m2m.pl/5c6950d4478bd\"><img src=\"@PROJECT_PATH@/assets/images/330.gif\" alt=\"Mobirise\" title></a>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"http://e-m2m.pl/5c6950d4478bd\" class=\"text-secondary\">TU </a><br><a href=\"http://e-m2m.pl/5c6950d4478bd\" class=\"text-secondary\">przejdziesz do wniosku</a></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Credy ma w swojej ofercie pożyczki krótkoterminowe do 30 dni, których suma może wynosić od 50 zł do 2000 zł.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/background4.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Nieograniczona ilość stron internetowych\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            \"Mobirise\" daje Ci możliwość możliwość utworzenia tylu stron internetowych, ilu potrzebujesz. <a href=\"https://mobirise.co\">Dowiedz się więcej...</a>\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rikQFj5Bey",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features2-e"
         }
       ]
     }
